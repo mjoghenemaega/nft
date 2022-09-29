@@ -336,7 +336,7 @@
                         <a href="services.html" class="nav-link">NFT Marketplace</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Portfolio <i class="fas fa-angle-down ml-1"></i></a>
+                        <a class="nav-link" href="#" >Portfolio <i class="fas fa-angle-down ml-1"></i></a>
                         <ul class="dropdown-menu">
                             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                             <li class="nav-item"><a href="services.html" class="nav-link">NFT Marketplace</a></li>
@@ -509,9 +509,124 @@
             </div>
         </section>
         <!-- ***** Welcome Area End ***** -->
+<!--      
+
+Partners and clients -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<div id="ourclients">
+    
      
+      
+  <div class="clients-wrap">
+    <ul id="clientlogo" class="clearfix">
+      <li>
+        <img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+     <li>
+     </li>
+    </ul>
+  </div>
+</div>
 
 
+
+<style>
+    #ourclients {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background:#f2f2f2;
+  padding-bottom:30px;
+  height:150px;
+  padding-top:30px;
+}
+#ourclients .clients-wrap {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#ourclients .clients-wrap ul {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ourclients .clients-wrap ul li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 220px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+#ourclients .clients-wrap ul li img {
+  vertical-align: middle;
+  max-width: 100%;
+  width:150px;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  -moz-transition: 0 linear left;
+  transition: 0 linear left;
+}
+#ourclients h3{
+border-bottom:2px solid #3399ff;
+width:150px;
+padding:10px;
+}
+</style>
+<script>
+    $(function() {
+  var $clientslider = $('#clientlogo');
+  var clients = $clientslider.children().length;
+  var clientwidth = (clients * 220); 
+  $clientslider.css('width', clientwidth);
+  var rotating = true;
+  var clientspeed = 1800;
+  var seeclients = setInterval(rotateClients, clientspeed);
+  $(document).on({
+    mouseenter: function() {
+      rotating = false;
+    },
+    mouseleave: function() {
+      rotating = true;
+    }
+  }, '#ourclients');
+  function rotateClients() {
+    if (rotating != false) {
+      var $first = $('#clientlogo li:first');
+      $first.animate({
+        'margin-left': '-220px'
+      }, 2000, function() {
+        $first.remove().css({
+          'margin-left': '0px'
+        });
+        $('#clientlogo li:last').after($first);
+      });
+    }
+  }
+});
+</script>
+
+<!-- partners and clients end -->
 
 
 
@@ -616,9 +731,9 @@
                     <div class="col-12 col-md-10 col-lg-7">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
-                            <h2>PortFolio</h2>
-                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            <h2 class="text-white">PortFolio</h2>
+                            <p class="d-none text-white d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block  text-white d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
                         </div>
                     </div>
                 </div>
@@ -626,23 +741,23 @@
                     <div class="col-12">
                         <!-- Portfolio Menu -->
                         <div class="portfolio-menu btn-group btn-group-toggle flex-wrap justify-content-center text-center mb-4 mb-md-5" data-toggle="buttons">
-                            <label class="btn active d-table text-uppercase p-2">
+                            <label class="btn text-white active d-table text-uppercase p-2">
                                 <input type="radio" value="all" checked class="portfolio-btn">
                                 <span>All</span>
                             </label>
-                            <label class="btn d-table text-uppercase p-2">
+                            <label class="btn text-white d-table text-uppercase p-2">
                                 <input type="radio" value="marketing" class="portfolio-btn">
                                 <span>Marketing</span>
                             </label>
-                            <label class="btn d-table text-uppercase p-2">
+                            <label class="btn  text-white d-table text-uppercase p-2">
                                 <input type="radio" value="agency" class="portfolio-btn">
                                 <span>Agency</span>
                             </label>
-                            <label class="btn d-table text-uppercase p-2">
+                            <label class="btn  text-white d-table text-uppercase p-2">
                                 <input type="radio" value="seo" class="portfolio-btn">
                                 <span>SEO</span>
                             </label>
-                            <label class="btn d-table text-uppercase p-2">
+                            <label class="btn d-table text-white text-uppercase p-2">
                                 <input type="radio" value="development" class="portfolio-btn">
                                 <span>App Development</span>
                             </label>
@@ -847,11 +962,11 @@
    
             
     
-                <section class="space-pt-1 bg-dark-half-md tech-padding teck-1">
+    <section class="space-pt-1 bg-dark-half-md tech-padding teck-1" style="color: #fff; background-color: #212428;">
             <div class="container">
                 <div class="row justify-content-md-center text-center">
                     <div class="section-title text-center ">
-                        <h3 class="common_h3 text-white" style="color:#fff !important;">Our Clients</h3>
+                        <h3 class="common_h3 0text-white" style="color:#fff !important;">Our Clients</h3>
                         <hr> </div>
                 </div>
                 <div class="row mt20 text-center">
@@ -964,7 +1079,7 @@
                 <div id="ret-inv" class="common_spacing">
                     <div class="container">
                         <div class="section-title text-center">
-                            <h3 class="common_h3">Sectors that evolve with the trend of NFT Marketplaces</h3>
+                            <h3 class="common_h3 " style="color: #212428;">Sectors that evolve with the trend of NFT Marketplaces</h3>
                             <hr> </div>
                         <div class="col-md-12 types text-center nft">
                             <ul class="type-list prtlists">
@@ -1037,6 +1152,9 @@
                 position: relative;
                 z-index: 1;
                 display: inline;
+            }
+            .feature-box-5 h4{
+                color: #212428;
             }
             
             .m-b20 {
@@ -1167,6 +1285,8 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
+
+
             }
             
             .category-grid-style-01 {
@@ -1236,6 +1356,16 @@
             
             .text-white {
                 color: #fff;
+            }
+            .text-dark{
+                color: #212428;
+             
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: -1.6px;
+    text-align: center;
             }
             </style>
             <section class="space-pt bg-dark-half-md tech-padding teck">
@@ -1557,52 +1687,261 @@
             </div>
         </section>
         <!-- ***** Content Area End ***** -->
+<!-- investors -->
+        <section class="container our-investors ptb_100">
+            <div class="section-heading text-center">
+                <h2 style="color: #212428;" > our investors</h2>
+                </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/coinbase-logo.svg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/pantera-jpg.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/bessemer.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/bessemer.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/artnet.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/artnet.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!-- Single Service -->
+                    <div class="single-service media p-2">
+                        <a href="https://www.bvp.com/" target="_blank">
+                            <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                        </a>
+                     
+                    </div>
+                </div>
+                
+
+                
+                </div>
+    
+        
+    
+        </section>
+    
+<!-- investors end -->
+<!-- featured in -->
+<section class="container section  our-investors ptb_100" >
+    <div class="section-heading text-center">
+        <h2 style="color: #212428;" >Featured Press </h2>
+        </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/hypebeast (1).jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/forbes-bg.png" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/yahoo-sport.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/bessemer.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/shady.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/bessemer.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/artnet.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>                <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/artnet.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <!-- Single Service -->
+            <div class="single-service media p-2">
+                <a href="https://www.bvp.com/" target="_blank">
+                    <img class="partner_logo" src="assets/img/welcome/draper.jpg" style="width:100%;">
+                </a>
+             
+            </div>
+        </div>
+        
 
         
-        <!-- ***** Brand Partner Area Start ***** -->
-        <section class="section brand-partner ptb_100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7">
-                        <!-- Section Heading -->
-                        <div class="section-heading text-center mb-2">
-                            <h2>INVESTORS & WE FEATURED IN </h2>
-                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <!-- Brand Partner Wrapper -->
-                        <ul class="brand-partner-wrapper list-inline text-center">
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_1.png" alt="">
-                            </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_2.png" alt="">
-                            </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_3.png" alt="">
-                            </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_4.png" alt="">
-                            </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_5.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Brand Partner Area End ***** -->
-     
+        </div>
+
+
+
+</section>
+
+<!-- featured end -->
+
+
+
          
 
    
@@ -2006,21 +2345,8 @@
             padding: 0px 0
         }
         
-        .footer-wrap h3 {
-            color: #fff;
-            font-size: 23px
-        }
-        
-        .footer-wrap h4,
-        .footer-wrap p {
-            color: #fff
-        }
-        
-        .footer-wrap h4 {
-            margin: 10px 0;
-            position: relative;
-            text-transform: uppercase
-        }
+      
+      
         
         .footer-wrap .col-lg-6:first-child {
             border-right: 1px solid #7c7979
@@ -2489,23 +2815,7 @@
             cursor: pointer
         }
         
-        .call-to-action {
-            background: #47b475;
-            display: block;
-            width: 100%;
-            padding: 20px 0;
-            text-align: center;
-            overflow: hidden
-        }
-        
-        .call-to-action p {
-            margin: 0;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0
-        }
+     
         
         .call-to-action .cl_bx p a {
             margin: 10px 0 0 0;
@@ -2689,12 +2999,7 @@
             font-weight: bold !important;
         }
         
-        .secondNav .header .main-menu > li a {
-            color: #444;
-            font-size: 13px;
-            letter-spacing: 0px;
-        }
-        
+
         .secondNav .header .main-menu > li a.telegram_button {
             color: #fff;
         }
@@ -3186,22 +3491,7 @@
             align-items: center;
         }
         
-        .footer-wrap h4 {
-            color: #fff;
-            background: -webkit-linear-gradient( 77deg, #00bcd4 0%, #17cc81 100%);
-            background: -ms-linear-gradient( 0deg, rgb(254, 66, 47) 0%, rgb(254, 81, 150) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-        
-        .footer-wrap h4 {
-            margin: 10px 0;
-            position: relative;
-            text-transform: uppercase;
-            padding-left: 10px;
-        }
-        
+  
         .footer-top {
             display: inline-block;
             width: 100%;
