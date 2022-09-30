@@ -1910,6 +1910,9 @@ body.dark,
     font-size: 2.5rem;
     margin: 0;
 }
+.single-service span{
+    font-size: 15px;
+}
 
 .single-service > span.icon-bg-1 {
     background-color: rgba(190, 99, 249, 0.15);
