@@ -284,7 +284,9 @@ img {
 .section-heading > span {
     color: #222;
 }
-
+#texxt{
+    color: #fff;
+}
 .section-heading > h2 {
     display: inline-block;
     font-size: 56px;
@@ -353,7 +355,7 @@ img {
 
 .btn.btn-bordered {
     background: transparent none repeat scroll 0 0;
-    color: #444;
+    color: #fff;
 }
 
 .btn.btn-bordered:hover,
@@ -1972,6 +1974,9 @@ body.dark,
 ****************************** */
 .portfolio-area .items {
     overflow: initial !important;
+}
+.text-milk{
+    color: #f2f2f2;
 }
 
 .portfolio-menu .btn {
