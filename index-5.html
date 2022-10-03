@@ -735,9 +735,14 @@ padding:10px;
                         <p>  <a href="#" class="btn btn-bordered-white mt-4">Learn More</a></p>
                         </div>
                         <div class="hero">
-                          <img
+                            <img
                             class="model-left"
-                            src="assets/img/welcome/phone1.webp"
+                            src="assets/img/welcome/phone2.webp"
+                            alt="model"
+                          />
+                          <img
+                            class="model-right"
+                            src="assets/img/welcome/phone2.webp"
                             alt="model"
                           />
                           
@@ -751,9 +756,14 @@ padding:10px;
                         <p>  <a href="#" class="btn btn-bordered-white mt-4">Learn More</a></p>
                         </div>
                         <div class="hero">
-                          <img
+                            <img
                             class="model-left"
-                            src="assets/img/welcome/phone3.webp"
+                            src="assets/img/welcome/phone1.webp"
+                            alt="model"
+                          />
+                          <img
+                            class="model-right"
+                            src="assets/img/welcome/phone1.webp"
                             alt="model"
                           />
                           
@@ -771,9 +781,14 @@ padding:10px;
                         <div class="hero">
                             <img
                             class="model-left"
-                            src="assets/img/welcome/phone2.webp"
+                            src="assets/img/welcome/phone3.webp"
                             alt="model"
-                          />   
+                          />
+                          <img
+                            class="model-right"
+                            src="assets/img/welcome/phone3.webp"
+                            alt="model"
+                          />  
                         </div>
                       </section>
                       <aside>
@@ -1420,7 +1435,7 @@ padding:10px;
 
     <!-- investors end -->
     <!-- featured in -->
-    <section class="section content-area  m-b20" style="background-color: #f2f2f2;">
+    <section class="section content-area  m-b20" style="background-color: #fff;">
         <div class="container "> 
             <div class="section-title center">
                 <h2 class="title text-center" style="color: #212428; "><strong> Our Investors</strong></h2>
@@ -1818,8 +1833,9 @@ padding:10px;
 /* main */
 
 .page {
-  min-height: 10vh;
+  min-height: 80vh;
   display: grid;
+  
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 
@@ -1848,16 +1864,16 @@ padding:10px;
 }
 
 .model-right {
-  transform: translate(0%, 10%);
+  transform: translate(0%, 0%);
 }
 
 .model-left {
-  transform: translate(0%, -10%);
+  transform: translate(0%, 0%);
 }
 
 .hero:hover .model-right,
 .hero:hover .model-left {
-  transform: translate(0%, 0%);
+  transform: translate(0%, -5%);
 }
 
 .details {
@@ -1935,9 +1951,11 @@ padding:10px;
 
 @media (max-width: 1024px) {
   .page {
+
     grid-template-columns: 5% 1fr 5%;
-   
+    grid-template-rows: 1fr 1fr;
     align-items: center;
+  
   }
 
   .hero {
@@ -2089,19 +2107,7 @@ padding:10px;
   });
 }
 
-// avoid multiple firing
-function throttle(func, limit) {
-  let inThrottle;
-  return function () {
-    const args = arguments;
-    const context = this;
-    if (!inThrottle) {
-      func.apply(context, args);
-      inThrottle = true;
-      setTimeout(() => (inThrottle = false), limit);
-    }
-  };
-}
+
 
 init();
 
