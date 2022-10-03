@@ -740,11 +740,7 @@ padding:10px;
                             src="assets/img/welcome/phone1.webp"
                             alt="model"
                           />
-                          <img
-                            class="model-right"
-                            src="assets/img/welcome/phone1.webp"
-                            alt="model"
-                          />
+                          
                         </div>
                       </section>
                       <section class="page chef">
@@ -760,11 +756,7 @@ padding:10px;
                             src="assets/img/welcome/phone3.webp"
                             alt="model"
                           />
-                          <img
-                            class="model-right"
-                            src="assets/img/welcome/phone3.webp"
-                            alt="model"
-                          />
+                          
                         </div>
                       </section>
                      
@@ -781,11 +773,7 @@ padding:10px;
                             class="model-left"
                             src="assets/img/welcome/phone2.webp"
                             alt="model"
-                          />         <img
-                            class="model-right"
-                            src="assets/img/welcome/phone2.webp"
-                            alt="model"
-                          />
+                          />   
                         </div>
                       </section>
                       <aside>
@@ -1941,7 +1929,7 @@ padding:10px;
 /* main */
 
 .page {
-  min-height: 80vh;
+  min-height: 10vh;
   display: grid;
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
@@ -1966,6 +1954,7 @@ padding:10px;
 
 .hero img {
   height: 500px;
+  
   transition: transform 0.3s ease-out;
 }
 
@@ -2008,7 +1997,7 @@ padding:10px;
 .pages {
   position: absolute;
   right: 5%;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
 }
 
@@ -2046,11 +2035,19 @@ padding:10px;
   }
 }
 
+@media screen and (max-width: 767px) {
+.page {
+    grid-template-columns: 5% 1fr 5%;
+    
+    align-items: center;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .page {
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 2fr 1fr;
+   
     align-items: center;
   }
 
