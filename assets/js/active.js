@@ -191,6 +191,40 @@
         }
     });
 
+
+
+    // :: 13.0 REVIEWS ACTIVE CODE
+    $('.clients-reviews.owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 50,
+        nav: false,
+        dots: false,
+        smartSpeed: 1000,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
+
+
+
+
     // :: 14.0 PORTFOLIO ACTIVE CODE
     $('.portfolio-area').each(function(index) {
 
