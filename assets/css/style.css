@@ -2335,16 +2335,15 @@ body.dark,
 }
 .singles-review img
 {
-    width: 20px;
-    height: 20px;
+    
 }
 .singles-review h4
 {
-    font-size: 16px;
+    
 }
 .singles-review h5
 {
-    font-size: 15px;
+    
 }
 .owl-item.active.center .singles-review {
     background-color: #212428;
