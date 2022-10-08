@@ -588,8 +588,7 @@ img {
     z-index: -1;
 }
 
-.overlay-dark::after {
-    background-color: rgba(16, 16, 45, 1);
+.overlay-dark::after { 
     opacity: 0.95;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
     z-index: -1;
@@ -741,7 +740,7 @@ img {
 }
 
 .breadcrumb-area {
-    background: rgba(0, 0, 0, 0) url("../img/bg/inner_bg.jpg") no-repeat fixed center center / cover;
+    background: url("../img/bg/7.jpg") no-repeat fixed center center / cover;
 }
 
 .blog .breadcrumb-area {
@@ -2491,7 +2490,7 @@ body.dark,
 :: 19.0 BREADCRUMB AREA CSS
 ****************************** */
 .breadcrumb-area {
-    height: 550px;
+    height: 400px;
     z-index: 1;
 }
 
@@ -2501,7 +2500,7 @@ body.dark,
     font-weight: 900;
     line-height: 1em;
     letter-spacing: -1.6px;
-    background-image: linear-gradient(45deg, #af52ed 15%, #8830df 65%);
+    background-image: linear-gradient(#FF343F 0%, rgba(238, 19, 48, 0.795) 50%, #ff343ee8);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
