@@ -2447,20 +2447,24 @@ body.dark,
 .blog-title {
     font-size: 22px;
     font-weight: 700;
+    color: #212428;
 }
 
 .blog-content {
     padding: 2rem;
+    color: #212428;
 }
 
 .blog-content > p {
     line-height: 1.8;
+    color: #212428;
 }
 
 .blog-btn {
     position: relative;
     display: inline-block;
     font-weight: 600;
+    color: #212428;
 }
 
 .blog-btn::after {
@@ -2691,7 +2695,7 @@ body.dark,
 
 .blog-share .social-icons > a.facebook:hover {
     background-color: #3b5999 !important;
-    color: #fff;
+    color: #000;
 }
 
 .blog-share .social-icons > a.twitter:hover {
@@ -2701,7 +2705,7 @@ body.dark,
 
 .blog-share .social-icons > a.google-plus:hover {
     background-color: #dd4b39 !important;
-    color: #fff;
+    color: #212428;
 }
 
 .blog-share .social-icons svg {
