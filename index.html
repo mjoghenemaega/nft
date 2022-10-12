@@ -34,6 +34,8 @@
 
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 
 </head>
 
@@ -385,6 +387,84 @@
 
 
     <div class="main " >
+
+        <h2 class="title text-center pt-3" style="color:#fff;"><strong>Portfolio <i class="bi bi-box-fill"></i></strong></h2>
+        <hr style="background: #fff !important; height: 2px; width: 90px; text-align: center; position: relative; margin: 0 auto 30px; border: 0;">
+      
+
+<section class="ptb_50" style="background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+min-height: 100vh;
+font-family: 'Fira Sans', sans-serif;
+  display: flex;">
+    <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+              <img  src="assets/img/welcome/phone3.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code" style="background-color: #242424; border-radius: 10px;" >    <img height="50" width="50" style="padding-left: 10px;" src="https://cnft.io/assets/images/logo_dark.svg"> <img height="50" width="50" src="https://cnft.io/assets/images/white/cnftText.svg"></span>
+              <div class="blog-slider__title">CNFT is a marketplace for Cardano NFTs.</div>
+              <div class="blog-slider__text">CNFT is officially the first marketplace on Cardano. Cardano provides a hub for NFT collections whereby artists, developers, and content creators wish to migrate to the Cardano blockchain.
+                <br><br>
+                <p> <strong style="font-size: 44px; color:#242424"> Available Now <i  class="bi bi-google-play"></i></strong> </p>
+              </div>
+              
+              <a href="#" class="blog-slider__button">Explore Case Study</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="assets/img/welcome/Wells_Fargo-Logo-PNG3.png" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+</section>
+
+
+<script>
+    var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      autoplay:true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script>
+
+
+
+
         <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
             <div class="container-fluid">
                 <div class="row">
