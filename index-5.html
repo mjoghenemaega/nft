@@ -1407,6 +1407,250 @@ background-image: linear-gradient(147deg, #ffe53bcc 0%, #fd3838 74%); padding: 6
                 </div>
             </section>
             <!--====== Call To Action Area End ======-->
+          <section class="section">
+            <div class="sticky-form"> <a>Quick Contact </a>
+              <div class="formdiv">
+                  <form class="" id="mailForm_sticky" method="post" action="">
+                      <h4>Connect With Us</h4> <a class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                      <hr>
+                      <div class="form-side">
+                          <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" name="name" id="name_sticky"> </div>
+                          <div class="form-group">
+                              <label for="email">Email Address</label>
+                              <input type="email" class="form-control" name="email" id="email_sticky"> </div>
+                          <div class="form-group">
+                              <label for="skype">Skype</label>
+                              <input type="text" class="form-control" name="skype" id="skype_sticky"> </div>
+                          <div class="form-group">
+                              <label>Phone</label>
+                              <input id="phone_sticky" name="phone_dummy" type="text" required="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                              <input type="hidden" name="phone" id="phone_newsletter">
+                              <input type="hidden" name="url" id="url" value="/"> </div>
+                          <div class="form-group">
+                              <label>messages</label>
+                              <textarea placeholder="Write text here..." id="textarea_sticky" name="message"></textarea>
+                          </div>
+                          <div class="form-group">
+                              <input type="button" id="submit" class="submit_send" value="send message"> </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          </section>
+
+
+
+
+          <script type="text/javascript">
+            $(".sticky-form > a").click(function(e) {
+                $('body').addClass('fixedPosition');
+                $(".sticky-form .formdiv").addClass('show');
+                e.stopPropagation();
+            });
+            $(".close").click(function(e) {
+                $('body').removeClass('fixedPosition');
+                $(".sticky-form .formdiv").removeClass('show');
+                e.stopPropagation();
+            });
+
+            </script>
+           
+ <style>
+
+
+/* 
+.form-left {
+    padding-left: 0;
+    padding-left: 0;
+}
+
+.form-left input {
+    border: 0;
+    border-bottom: 1px solid #dedede;
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+}
+
+.form-left .checkbox label {
+    text-transform: initial;
+}
+
+.form-right {
+    border-left: 1px solid #dedede;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-right textarea {
+    border: 0;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    color: #000;
+    padding: 0;
+    background: transparent;
+}
+
+.form-right label {
+    text-transform: capitalize;
+}
+
+.form-right input[type="submit"] {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    background: #47b475;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.form-right .form-group {
+    padding-left: 20px;
+} 
+
+
+.sticky-form>a {
+    position: fixed;
+    right: -50px;
+    top: 180px;
+    z-index: 10;
+    background: #47b475;
+    color: #000;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.sticky-form>a:hover {
+    color: #fff !important;
+}
+
+.sticky-form .formdiv {
+    position: fixed;
+    right: -1000px;
+    opacity: 0;
+    top: 70px;
+    z-index: 10;
+    background: #fff;
+    width: 400px;
+    float: inherit;
+    padding: 20px;
+    transition: 0.5s;
+    box-shadow: -2px 0 8px 0 #c9bdbd;
+    transition: 0.3s;
+}
+
+.sticky-form .formdiv.show {
+    right: 0;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.sticky-form #mloader {
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    border: 3px solid #47b475;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    border-left: 3px solid rgba(255, 255, 255, 0);
+    background-color: transparent !important;
+}
+
+.form-side input {
+    border: 0;
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+    border-radius: 0;
+}
+
+.form-side .checkbox label {
+    text-transform: initial;
+}
+
+.form-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-side textarea {
+    border: 0;
+    resize: none;
+    width: 100%;
+    height: 50px;
+    color: #000;
+    padding: 0;
+}
+
+.form-side label {
+    text-transform: capitalize;
+}
+
+.form-side input#submit {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    background: #47b475;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.form-side .form-group:first-child {
+    padding-left: 0;
+}
+
+.sticky-form hr {
+    width: 70px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  
+
+    .sticky-form .formdiv.show {
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+        top: 84px;
+        bottom: 0;
+        right: 0;
+        padding: 15px;
+    }
+
+    .form-right {
+        border: 0;
+    }
+
+    .form-right .form-group:first-child {
+        padding: 0;
+    }
+
+    #get-quote .formdiv form {
+        padding: 20px !important;
+    }
+
+   
+}
+
+ </style>          
 
  
 
@@ -1561,12 +1805,7 @@ background-image: linear-gradient(147deg, #ffe53bcc 0%, #fd3838 74%); padding: 6
                 </div>
             </section>
             <!--====== Contact Area End ======-->
-          
-            <style>
-           
-
-
-            </style>
+ 
             <Script>
                 function init() {
   // slider
@@ -1682,6 +1921,7 @@ background-image: linear-gradient(147deg, #ffe53bcc 0%, #fd3838 74%); padding: 6
 init();
 
             </Script>
+              <script   src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
             <!--====== Footer Area Start ======-->
             <footer class="section footer-area dark-bg">
@@ -1692,14 +1932,14 @@ init();
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <!-- Footer Items -->
                                 <div class="footer-items">
+                                
                                     <!-- Footer Title -->
                                     <h3 class="footer-title text-white text-uppercase mb-2">About Us</h3>
                                     <ul>
-                                        <li class="py-2"><a class="text-milk" href="#">Company Profile</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Testimonials</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Careers</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Partners</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Affiliate Program</a></li>
+                                        <li class="py-2"><a class="text-milk" href="portfolio.html">Portfolio</a></li>
+                                        <li class="py-2"><a class="text-milk" href="community.html">Communities</a></li>
+                                        <li class="py-2"><a class="text-milk" href="clients.html">Clients</a></li>
+                                        <li class="py-2"><a class="text-milk" href="about.html"> About Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1709,11 +1949,12 @@ init();
                                     <!-- Footer Title -->
                                     <h3 class="footer-title text-white text-uppercase mb-2">Services</h3>
                                     <ul>
-                                        <li class="py-2"><a class="text-milk" href="#">Web Application</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Product Management</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">User Interaction Design</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">UX Consultant</a></li>
-                                        <li class="py-2"><a class="text-milk" href="#">Social Media Marketing</a></li>
+                                        <li class="py-2"><a class="text-milk" href="#">Crypto Exchange</a></li>
+                                        <li class="py-2"><a class="text-milk" href="nft-market.html">NFT Marketplace</a></li>
+                                        <li class="py-2"><a class="text-milk" href="#">Smart Contract</a></li>
+                                        <li class="py-2"><a class="text-milk" href="#">Token</a></li>
+                                        <li class="py-2"><a class="text-milk" href="#">CIO</a></li>
+                                        <li class="py-2"><a class="text-milk" href="#">dApp</a></li>
                                     </ul>
                                 </div>
                             </div>
