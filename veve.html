@@ -1107,3 +1107,48 @@ init();
 
 
 
+
+<div class="sidebar-form">
+		
+    <div class="call-action">
+      <span>Enquriy Form</span>
+    </div>
+
+    <h3>Enquriy Form</h3>
+
+    <form action="">
+        <div class="form-group">
+          <label for="">Full Name</label>
+          <input type="text" name="" id="" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Email Address</label>
+          <input type="email" name="" id="" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Phone No.</label>
+          <input type="text" name="" id="" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Subject</label>
+          <input type="text" name="" id="" class="form-control">
+        </div>
+
+        <input type="submit" value="Send Enquiry" id="submit-btn">
+    </form>
+
+  </div>
+  <script>
+    $(document).ready(function(){
+$(".sidebar-form .call-action").click(function(){
+$(this).parents(".sidebar-form").toggleClass("show");
+});
+});
+  </script>
+          
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
