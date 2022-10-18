@@ -21,7 +21,7 @@
 .sidebar-form .call-action
 {
 	position: absolute;
-	background-color: var(--purple);
+	background-color:  #fd3838 ;
 	font-family: 'roboto';
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -67,7 +67,7 @@
 	width: 100%;
 	border:none;
 	margin-top: 8px;
-	background-color: var(--purple);
+	background-color: #fd3838 ;
 	color: var(--white);
 	padding: 7px;
 	font-family: 'roboto';
