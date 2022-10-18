@@ -50,6 +50,7 @@
 .sidebar-form  .form-group
 {
 	margin-bottom: 10px;
+	z-index: 4;
 }
 
 .sidebar-form  .form-group label
