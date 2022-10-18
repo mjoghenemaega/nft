@@ -3,3 +3,14 @@ $(document).ready(function(){
             $(this).parents(".sidebar-form").toggleClass("show");
     });
 });
+
+
+$(document).ready(function(){
+    $("#one").click(function(){
+            $(this).parents(".sidebar-form").toggleClass("show");
+    });
+});
+
+
+
+
