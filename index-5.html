@@ -432,7 +432,7 @@
                             <!-- Buttons -->
                             <div class="button-group">
                                 <a href="https://api.whatsapp.com/send?l=en&amp;text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20BUSTER%20SOLUTION&amp;phone=919815206209" class="btn btn-bordered-white active">Start a Project</a>
-                                <a href="mailto: Business@busterapps.com" class="btn btn-bordered-white  d-sm-inline-block">Contact Us</a>
+                                <a id="btnOpenForm2" class="btn btn-bordered-white  d-sm-inline-block">Contact Us</a>
                             </div>
 
 
@@ -2015,6 +2015,27 @@ $('.form-popup-bg').addClass('is-visible');
 //close popup when clicking x or off popup
 $('.form-popup-bg').on('click', function(event) {
 if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm1')) {
+event.preventDefault();
+$(this).removeClass('is-visible');
+}
+});
+
+
+
+});
+
+$(document).ready(function($) {
+
+/* Contact Form Interactions */
+$('#btnOpenForm2').on('click', function(event) {
+event.preventDefault();
+
+$('.form-popup-bg').addClass('is-visible');
+});
+
+//close popup when clicking x or off popup
+$('.form-popup-bg').on('click', function(event) {
+if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm2')) {
 event.preventDefault();
 $(this).removeClass('is-visible');
 }
