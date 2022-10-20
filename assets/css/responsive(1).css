@@ -181,6 +181,10 @@
 /* ******************************
 :: 3.0 WELCOME AREA CSS
 ****************************** */
+
+
+
+
 @media (min-width: 992px) {
     .homepage-3 .welcome-intro h1 {
         font-size: 65px;
@@ -212,6 +216,16 @@
 
     .welcome-thumb-6 {
         top: -16%;
+    }
+}
+
+
+
+
+@media (max-width: 1500px) {
+    .welcome-area {
+        height: 100% !important;
+        padding-top: 10px;
     }
 }
 
