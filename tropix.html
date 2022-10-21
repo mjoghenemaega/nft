@@ -92,6 +92,9 @@
       <h3>Get in Touch</h3>
   
       <form  action="https://formsubmit.co/Business@busterapps.com" method="POST" >
+          <!-- <disable captha -->
+            <input type="hidden" name="_captha" value="false">
+            <input type="hidden" name="_next" value="https://busterapps.com/">
           <div class="form-group">
             <label for="">Full Name</label>
             <input type="text" name="name" id="" class="form-control">
@@ -297,8 +300,8 @@
 
 
                 </style>
-                    <p  id="par " ><a target="_blank" href="https://api.whatsapp.com/send?l=en&amp;text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20BUSTER%20SOLUTION&amp;phone=919815206209"><i class="bi bi-whatsapp" aria-hidden="true"></i>+91 9815 206 209</a>     <a id="mymail" href="mailto: Business@busterapps.com"><i  class="fa fa-envelope" aria-hidden="true"></i>      Business@busterapps.com   </a><a style="padding-left: 20px; ">
-                        <i   class="bi bi-geo-alt" aria-hidden="true"> </i> Our Global Offices : USA | Singapore | UK | Australia | India </a></p>
+                     <p  id="par " ><a target="_blank" href="https://api.whatsapp.com/send?l=en&amp;text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20BUSTER%20SOLUTION&amp;phone=919815206209"><i class="bi bi-whatsapp" aria-hidden="true"></i> +91 9815 206 209</a>     <a id="mymail" href="mailto: Business@busterapps.com"><i  class="fa fa-envelope" aria-hidden="true"></i>      Business@busterapps.com   </a><a style="padding-left: 20px; ">
+                        Global Offices : USA | Singapore | UK | Australia | India </a></p>
         
                     </div>
             
@@ -806,6 +809,9 @@ font-family: 'Fira Sans', sans-serif;
                             <div class="contact-box text-center" >
                                 <!-- Contact Form -->
                                 <form  action="https://formsubmit.co/Business@busterapps.com" method="POST" >
+                                      <!-- <disable captha -->
+                                        <input type="hidden" name="_captha" value="false">
+                                        <input type="hidden" name="_next" value="https://busterapps.com/">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="form-group">
@@ -965,134 +971,136 @@ init();
 
 </Script>
 
-<!--====== Footer Area Start ======-->
-<footer class="section footer-area dark-bg">
-    <!-- Footer Top -->
-    <div class="footer-top ptb_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <!-- Footer Items -->
-                    <div class="footer-items">
+           <!--====== Footer Area Start ======-->
+           <footer class="section footer-area dark-bg">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                              
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-white text-uppercase mb-2">About Us</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-milk" href="about.html">About Us |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">Portfolio  |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="community.html">Communities |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="clients.html">Partners |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="clients.html">Clients |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-white text-uppercase mb-2">Services</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">Crypto Exchange  |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">NFT Marketplace  |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">Token |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">Smart Contract |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">CIO |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="portfolio.html">dApp |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-white text-uppercase mb-2">Support</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-milk" href="#">Frequently Asked Questions |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="#">Terms &amp; Conditions |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="#">Privacy Policy |</a></li>
+                                    <li class="py-2"><a class="text-milk" href="#">Help Center |</a></li>
+                                    <li class="py-2"><a class="text-milk " id="demo" >Contact Us |</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                       
+
+                       
+
+                        <div class="form-popup-bg" style="z-index: 900000000000;">
+                          <div class="form-container">
+                            <button id="btnCloseForm" class="close-button">X</button>
+                            <h1>Contact Us</h1>
+                            <p>For more information. Please complete this form.</p>
+                            <form  action="https://formsubmit.co/Business@busterapps.com" method="POST" >
+                                  <!-- <disable captha -->
+                                    <input type="hidden" name="_captha" value="false">
+                                    <input type="hidden" name="_next" value="https://busterapps.com/">
+                              <div class="form-group">
+                                <label for="">Name</label>
+                                <input name="name"  type="text" class="form-control" />
+                              </div>
+                             
+                              <div class="form-group">
+                                <label for="">E-Mail Address</label>
+                                <input name="Email" class="form-control" type="text" />
+                              </div>
+                              <div class="form-group">
+                                <label for="">Phone Number</label>
+                                <input name="Phone number" class="form-control" type="text" />
+                              </div>
+                              <div class="form-group">
+                                <label for="">Message </label>
+                                <textarea class="form-control" name="Message" placeholder="Message" required="required"></textarea>
+                            </div>
+                              <button class=" btn btn-bordered-white">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+
+
+
+
+               
                       
-                        <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">About Us</h3>
-                        <ul>
-                            <li class="py-2"><a class="text-milk" href="about.html">About Us</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">Portfolio,</a></li>
-                            <li class="py-2"><a class="text-milk" href="community.html">Communities</a></li>
-                            <li class="py-2"><a class="text-milk" href="clients.html">Partners</a></li>
-                            <li class="py-2"><a class="text-milk" href="clients.html">Clients</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <!-- Footer Items -->
-                    <div class="footer-items">
-                        <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">Services</h3>
-                        <ul>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">Crypto Exchange</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">NFT Marketplacet</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">Token</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">Smart Contract</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">CIO</a></li>
-                            <li class="py-2"><a class="text-milk" href="portfolio.html">dApp</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <!-- Footer Items -->
-                    <div class="footer-items">
-                        <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">Support</h3>
-                        <ul>
-                            <li class="py-2"><a class="text-milk" href="#">Frequently Asked</a></li>
-                            <li class="py-2"><a class="text-milk" href="#">Terms &amp; Conditions</a></li>
-                            <li class="py-2"><a class="text-milk" href="#">Privacy Policy</a></li>
-                            <li class="py-2"><a class="text-milk" href="#">Help Center</a></li>
-                            <li class="py-2"><a class="text-milk " id="demo" >Contact Us</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-               
-
-               
-
-                <div class="form-popup-bg" style="z-index: 900000000000;">
-                  <div class="form-container">
-                    <button id="btnCloseForm" class="close-button">X</button>
-                    <h1>Contact Us</h1>
-                    <p>For more information. Please complete this form.</p>
-                    <form  action="https://formsubmit.co/Business@busterapps.com" method="POST" >
-                      <div class="form-group">
-                        <label for="">Name</label>
-                        <input name="name"  type="text" class="form-control" />
-                      </div>
-                     
-                      <div class="form-group">
-                        <label for="">E-Mail Address</label>
-                        <input name="Email" class="form-control" type="text" />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Phone Number</label>
-                        <input name="Phone number" class="form-control" type="text" />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Message </label>
-                        <textarea class="form-control" name="Message" placeholder="Message" required="required"></textarea>
-                    </div>
-                      <button class=" btn btn-bordered-white">Submit</button>
-                    </form>
-                  </div>
-                </div>
-
-
-
-
-       
-              
 <div class="col-12 col-sm-6 col-lg-3">
 <!-- Footer Items -->
 <div class="footer-items">
-    <!-- Footer Title -->
-    <h3 class="footer-title text-white text-uppercase mb-2">Follow Us</h3>
-    <p class="text-milk mb-2"></p>
-    <!-- Social Icons -->
-    <ul class="social-icons list-inline pt-2">
-        <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-google-plus"></i></a></li>
-        <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-instagram"></i></a></li>
+  <!-- Footer Title -->
+  <h3 class="footer-title text-white text-uppercase mb-2">Follow Us</h3>
+  <p class="text-milk mb-2"></p>
+  <!-- Social Icons -->
+  <ul class="social-icons list-inline pt-2">
+      <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-facebook"></i></a></li>
+      <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-google-plus"></i></a></li>
+      <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="list-inline-item px-1"><a class="text-milk" href="#"><i class="fab fa-instagram"></i></a></li>
 
-    </ul>
-    <img src="assets/img/welcome/review pic.png" alt="reviews">
+  </ul>
+  <img src="assets/img/welcome/review pic.png" alt="reviews">
 </div>
 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer Bottom -->
-    <div class="footer-bottom dark-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Copyright Area -->
-                    <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
-                        <!-- Copyright Left -->
-                        <div class="copyright-left text-milk">&copy; Copyrights 2022 bustersolutions All rights reserved.</div>
-                        <!-- Copyright Right -->
-                        <div class="copyright-right text-milk"> Made with <i class="fas fa-heart color-2"></i> By <a class="text-milk" href="https://t.me/@obimich">Mj</a></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-<!--====== Footer Area End ======-->
-
+            <!-- Footer Bottom -->
+            <div class="footer-bottom dark-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left text-milk">&copy; Copyrights 2022 busterApps All rights reserved.</div>
+                                <!-- Copyright Right -->
+                                <div class="copyright-right text-milk"> Made with <i class="fas fa-heart color-2"></i> By <a class="text-milk" href="https://t.me/@obimich">Mj</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
 <!--====== Modal Search Area Start ======-->
 
 <!--====== Modal Search Area End ======-->
