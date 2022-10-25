@@ -2884,10 +2884,20 @@ clip-path: circle(100%);
 color: #FFFF;
 }
 
+
 .crypto-exchange-styling {
 border: 5px solid #fd3838;
 border-radius: 15px;
 }
+.content h2{
+    color: #fd3838;
+
+
+  }
+  .content h2:hover{
+    color: #fff;
+
+  }
 
 .colored-button-header:link,
 .colored-button-header:visited {
