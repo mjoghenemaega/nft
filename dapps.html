@@ -447,7 +447,7 @@
               <div class="row flex-lg-row-reverse align-items-center g-4">
                 <div class="col-lg-6">
                   <img
-                    src="https://clarisco.s3.ap-south-1.amazonaws.com/clarisco+images/blockchain/services/dapps-development/ethereum-dapp-development-company.webp"
+                    src="assets/img/welcome/ether2.jpeg"
                     alt="ethereum-dapp-development-company" />
                 </div>
                 <div class="col-lg-6">
@@ -470,7 +470,7 @@
               <div class="row align-items-center g-4">
                 <div class="col-lg-6">
                   <img
-                    src="https://clarisco.s3.ap-south-1.amazonaws.com/clarisco+images/blockchain/services/dapps-development/ethereum-dapp-development-1.webp"
+                    src="assets/img/welcome/ether4.webp"
                     alt="ethereum-dapp-development-1" />
                 </div>
                 <div class="col-lg-6">
@@ -581,7 +581,7 @@
               <div class="row flex-lg-row-reverse align-items-center g-4">
                 <div class="col-lg-6">
                   <img
-                    src="https://clarisco.s3.ap-south-1.amazonaws.com/clarisco+images/blockchain/services/dapps-development/customized-blockchain-development-2.webp"
+                    src="assets/img/welcome/dapps1.webp"
                     alt="customized-blockchain-development-2" />
                 </div>
                 <div class="col-lg-6">
@@ -922,7 +922,7 @@
                 <!-- Section Heading -->
                 <div class="section-heading text-center m-0">
                     <h2 class="text-white">Looking for the best Blockchain agency &amp; Web 3.0 Project solution?</h2>
-                   <a target="_blank" href="https://api.whatsapp.com/send?l=en&amp;text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20BUSTER%20SOLUTION&amp;phone=919815206209"class="btn btn-bordered-white mt-4">Connect on Whatsapp</a> or <a target="_blank" id="btnOpenForm1" class="btn btn-bordered-white mt-4">Chat Now</a>
+                   <a target="_blank" href="https://api.whatsapp.com/send?l=en&amp;text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20BUSTER%20SOLUTION&amp;phone=919815206209"class="btn btn-bordered-white mt-4">Connect on Whatsapp</a> or <a target="_blank" id="btnOpenForm5" class="btn btn-bordered-white mt-4">Chat Now</a>
                 </div>
             </div>
         </div>
@@ -1446,6 +1446,30 @@ $('.form-popup-bg').addClass('is-visible');
 //close popup when clicking x or off popup
 $('.form-popup-bg').on('click', function(event) {
 if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm2')) {
+event.preventDefault();
+$(this).removeClass('is-visible');
+}
+});
+
+
+
+});
+
+
+
+
+$(document).ready(function($) {
+
+/* Contact Form Interactions */
+$('#btnOpenForm5').on('click', function(event) {
+event.preventDefault();
+
+$('.form-popup-bg').addClass('is-visible');
+});
+
+//close popup when clicking x or off popup
+$('.form-popup-bg').on('click', function(event) {
+if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm5')) {
 event.preventDefault();
 $(this).removeClass('is-visible');
 }
