@@ -5520,4 +5520,9 @@ background-image: linear-gradient(147deg, #ffe53bb4 0%, #fd383894 74%);
                 width: 30px;
            }
        }
-        
+ .pro .media{
+    border: 0.2px solid #fc573b;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    
+}
